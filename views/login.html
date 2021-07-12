@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.3/mercadolibre/favicon.svg" rel="icon"
         data-head-react="true" />
-
-    <title>Mercado Liebre</title>
+    <title>Login</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -58,47 +58,18 @@
 
     </header>
 
-    <div><img class="banner" src="/img/img-home-banner.jpg" alt="" width="100%"></div>
+    <form action="/home.html" method="POST" class="create-form">
+        <div class="control-formulario">
+            <input type="text" name="usuario" placeholder="Nombre de usuario" class="control">
+        </div>
+        <div class="control-formulario">
+            <input type="password" name="password" placeholder="Elegí tu contraseña" class="control">
+        </div>
+        <a href="/home.html">
+            <button type="submit" class="boton-enviar-login">Enviar</button>
+        </a>
 
-    <main>
-
-        <h2 id="titular">Basado en tu última visita</h2>
-        <section class="articulo">
-            <article class="product">
-                <img src="/img/img-cafetera-moulinex.jpg" alt="">
-                <i class="fas fa-truck"></i>
-                <p id="precio"> $6770 </p>
-                <p id="descuento"> 40% off </p>
-                <h2 id="descripcion"> Cafetera Moulinex </h2>
-            </article>
-            <article class="product">
-                <img src="/img/img-samsung-galaxy-s10.jpg" alt="">
-                <i class="fas fa-truck"></i>
-                <p id="precio"> $70.500 </p>
-                <p id="descuento"> 10% off </p>
-                <h2 id="descripcion"> Samsung Galaxy S10</h2>
-            </article>
-        </section>
-
-        <h2 id="titular">Sección de Ofertas</h2>
-        <section class="articulo">
-            <article class="product">
-                <img src="/img/img-macbook-pro-2019.jpg" alt="">
-                <i class="fas fa-truck"></i>
-                <p id="precio"> $230.000 </p>
-                <p id="descuento"> 20% off </p>
-                <h2 id="descripcion"> MacBook Pro 2019 </h2>
-            </article>
-            <article class="product">
-                <img src="/img/img-tv-samsung-smart.jpg" alt="">
-                <i class="fas fa-truck"></i>
-                <p id="precio"> $70.500 </p>
-                <p id="descuento"> 10% off </p>
-                <h2 id="descripcion"> TV Samsung Smart</h2>
-            </article>
-        </section>
-
-    </main>
+    </form>
 
     <footer>
         <div>
@@ -131,7 +102,6 @@
             </article>
         </div>
     </footer>
-
 </body>
 
 </html>

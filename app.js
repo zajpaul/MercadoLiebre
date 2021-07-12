@@ -20,7 +20,8 @@ app.listen(process.env.PORT || 3000, function () {
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/home.html'));  // Permite enviar un archivo HTML
-    //res.sendFile(path.join(__dirname, './views/index.html'));  // Permite enviar un archivo HTML
+    res.sendFile(path.join(__dirname, './views/register.html'));  // Permite enviar un archivo HTML
+    res.sendFile(path.join(__dirname, './views/login.html'));  // Permite enviar un archivo HTML
 });
 
 
